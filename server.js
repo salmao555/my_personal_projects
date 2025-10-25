@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mysql = require("mysql2");
 const path = require("path"); // ✅ required for serving static files
+require("dotenv").config();
+
 
 const app = express();
 const port = 4000;
@@ -12,11 +14,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // ✅ MySQL connection configuration
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",                // your MySQL username
-  password: "sALMA123000@",    // your actual password
-  database: "dokhospital",     // your database name
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
 });
+
 
 // ✅ Connect to the MySQL server
 db.connect((err) => {
