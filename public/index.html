@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DOK Appointment</title>
+  <style>
+    body { font-family: Arial; background: #e0cae1; padding: 20px; }
+    form { background: rgb(214,197,209); padding: 20px; border-radius: 10px; width: 400px; margin: auto; }
+    input, textarea, button { width: 100%; margin: 5px 0; padding: 8px; }
+    button { background-color: #007BFF; color: white; border: none; }
+  </style>
+  
+</head>
+<body>
+  <h2 style="text-align:center;">Book an Appointment</h2>
+  <form action="/submit" method="POST">
+    <label>ID:</label>
+    <input type="text" name="id" required>
+
+    <label>Full Name:</label>
+    <input type="text" name="Name" required>
+
+    <label>Phone Number:</label>
+    <input type="text" name="Phone_number" required>
+
+    <label>Email:</label>
+    <input type="email" name="email">
+
+    <label>Age:</label>
+    <input type="number" name="age" required>
+
+    <label>Tutor Phone (if minor):</label>
+    <input type="text" name="tutor_phone_if_minor">
+
+    <label>Tutor Name:</label>
+    <input type="text" name="tutor_name">
+
+    <label>Date:</label>
+    <input type="date" name="date" required>
+
+    <label>Treatment Type:</label>
+    <input type="text" name="treatment_type" required>
+
+    <label>Comment:</label>
+    <textarea name="comment"></textarea>
+
+    <button type="submit">Save</button>
+  </form>
+  <div style="text-align:center;margin-top:10px;">
+    <a href="/appointments">View All Appointments</a>
+  </div>
+</body>
+</html>
+
