@@ -1,0 +1,41 @@
+.booking-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.booking-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.calendar-section, .service-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.timeslots button {
+  background: #0b3d91;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeslots button:hover {
+  background: #009ca6;
+}
+
+select, input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}

@@ -1,0 +1,132 @@
+{{ define "main" }}
+<div class="booking-container">
+  <h1>Sélectionnez une date et une heure</h1>
+
+  <div class="booking-layout">
+    <!-- Calendar -->
+    <div class="calendar-section">
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date" />
+
+      <h3>Heure :</h3>
+      <div id="timeslots" class="timeslots">
+        <button>10:30</button>
+        <button>11:00</button>
+        <button>11:30</button>
+        <button>14:00</button>
+        <button>15:00</button>
+        <button>16:30</button>
+      </div>
+    </div>
+
+    <!-- Speciality / Service selection -->
+    <div class="service-section">
+      <h3>Choisissez la spécialité</h3>
+      <select id="speciality">
+        <option>Cardiologie</option>
+        <option>Dermatologie</option>
+        <option>Pédiatrie</option>
+        <option>Ophtalmologie</option>
+        <option>Psychiatrie</option>
+        <option>Pneumologie</option>
+        <option>Neurologie</option>
+      </select>
+
+      <h3>Type de service</h3>
+      <select id="service">
+        <option>Consultation</option>
+        <option>Suivi</option>
+        <option>Télé-consultation</option>
+      </select>
+
+      <h3>Détails du rendez-vous</h3>
+      <p><strong>Prix :</strong> 50 DH</p>
+      <p><strong>Durée :</strong> 30 minutes</p>
+      <p><strong>Opérateur :</strong> Dr Sami Abdelaziz</p>
+
+      <button id="confirmBtn">Confirmer</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .booking-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #004aad;
+    margin-bottom: 30px;
+  }
+  .booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  label {
+    font-weight: 600;
+  }
+  input[type="date"] {
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .timeslots button {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    color: #004aad;
+    transition: 0.2s;
+  .timeslots button:hover {
+    background: #004aad;
+    color: white;
+  }
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    background: #004aad;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  }
+</style>
+
+<script>
+  document.getElementById("confirmBtn").addEventListener("click", () => {
+    const speciality = document.getElementById("speciality").value;
+    const service = document.getElementById("service").value;
+    alert(
+      `Rendez-vous confirmé !\\n${speciality} – ${service}\\n${date}`
+</script>
+{{ end }}
+  });
+    );
+    const date = document.getElementById("date").value;
+    background: #003080;
+  button#confirmBtn:hover {
+    padding: 10px 20px;
+  button#confirmBtn {
+    margin-top: 8px;
+  select {
+  }
+    cursor: pointer;
+

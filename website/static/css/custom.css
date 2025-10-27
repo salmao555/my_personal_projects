@@ -1,0 +1,98 @@
+/* --- DokHospital Custom Styling --- */
+
+/* Global colors and typography */
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Header and menu */
+header {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+  color: #0b3d91 !important; /* deep navy */
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #009ca6 !important; /* teal hover */
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #e6f3ff, #f9fcff);
+  color: #0b3d91;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #334155;
+}
+
+.hero a {
+  background-color: #009ca6;
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero a:hover {
+  background-color: #007e87;
+}
+
+/* Buttons */
+button,
+.btn,
+input[type="submit"] {
+  background-color: #009ca6;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+  background-color: #007e87;
+}
+
+/* Footer */
+footer {
+  background-color: #0b3d91;
+  color: #f8fafc;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Section titles */
+h2, h3 {
+  color: #0b3d91;
+}
